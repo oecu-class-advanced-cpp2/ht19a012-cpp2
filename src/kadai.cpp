@@ -38,8 +38,7 @@ int main()
   std::cout << nth_prime(271, 37, 39) << std::endl;
   std::cout << nth_prime(103, 230, 1) << std::endl;
   std::cout << nth_prime(27, 104, 185) << std::endl;
-  std::cout << nth_prime(253, 50, 85) << std::endl;
-// 以下、同様に、入出力例通りになるか確認せよ。 
+  std::cout << nth_prime(253, 50, 85) << std::endl;s
   std::cin.get();
   return 0;
 }
