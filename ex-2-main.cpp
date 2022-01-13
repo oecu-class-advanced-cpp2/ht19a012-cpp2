@@ -48,8 +48,49 @@ public
   /* ----------------------------------------------------------------- */
   std::string to_string() const
   {
-    return "XXX";
-  }
+uint16_t temp;
+	std::stringstream ret;
+	//m
+	temp = value_ / 1000;
+	if (temp == 1){
+		ret << 'm';
+	}
+	if (temp > 1){
+		ret << temp;
+		ret << 'm';
+	}
+
+	//x
+	temp = (value_ /100) % 10;
+	if (temp == 1){
+		ret << 'c';
+	}
+	if (temp > 1){
+		ret << temp;
+		ret << 'c';
+	}
+
+	//c
+	temp = (value_ / 10 ) % 10;
+	if (temp == 1){
+		ret << 'x';
+	}
+	if (temp > 1){
+		ret << temp;
+		ret << 'x';
+	}
+
+	//i
+	temp = value_ % 10;
+	if (temp == 1){
+		ret << 'i';
+	}
+	if (temp > 1){
+		ret << temp;
+		ret << 'i';
+	}
+	return ret.str();
+	}
 
   void debug_mcxi()
   {
