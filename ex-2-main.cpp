@@ -18,7 +18,6 @@ public
   {
     int num = 0;
     for (auto pos = s.begin(); pos != s.end(); ++pos) {
-	    //*pos は、char ! char ってことが分かってたら、もっと簡単にできるのでは？？
       if (*pos >= '2' && *pos <= '9') {
 	num = *pos - '0';
       } else {
