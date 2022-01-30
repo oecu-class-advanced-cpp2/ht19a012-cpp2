@@ -118,6 +118,7 @@ void check(std::string a, std::string b, std::string answer) {
 }
 } // namespace cpp2
 int main() {
+//正解する値
 cpp2::check("xi", "x9i", "3x");
 cpp2::check("i", "9i", "x");
 cpp2::check("c2x2i", "4c8x8i", "6cx");
@@ -128,6 +129,7 @@ cpp2::check("m", "i", "mi");
 cpp2::check("i", "m", "mi");
 cpp2::check("m9i", "i", "mx");
 cpp2::check("9m8c7xi", "c2x8i", "9m9c9x9i");
+//不正解や何かしらの問題がある場合の値
 cpp2::check("i", "5i", "3x");
 cpp2::mcxi c0("cm");
 cpp2::mcxi c1("ff");
